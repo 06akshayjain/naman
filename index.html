@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title1</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+ <style>
+  
+  .mySlides {display:none;}
+  h1 {text-align:center;}
+p {text-align:center;}
+
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="background-color:rgba(255, 99, 71, 0.4);">
+ 
+<h1 >
+ <img src="images/birth.gif" alt="Computer man" style="width:48px;height:48px;">
+ !!!!!!Happy Birthday Saand!!!!!!
+ <img src="images/tenor.gif" alt="Computer man" style="width:48px;height:48px;">
+ </h1>
+ 
+ <h2 style="border:2px solid Violet;">
+<p style="color:OrangeRed;">
+┈┈┈☆☆☆☆☆☆☆☆┈┈┈  </p>  
+ <p style="color:DodgerBlue;"> 
+┈┈╭┻┻┻┻┻┻┻┻┻╮┈┈  </p> 
+ <p style="color:SlateBlue;">
+┈┈┃╱╲╱╲╱╲╱╲╱┃┈┈   </p>  
+<p style="color:DodgerBlue;"> 
+┈╭┻━━━━━━━━━┻╮┈ </p>  
+ <p style="color:SlateBlue;"> 
+┈┃╱╲╱╲╱╲╱╲╱╲╱┃┈ </p>  
+<p style="color:DodgerBlue;"> 
+┈┗━━━━━━━━━━━┛┈  </p>  
+   </h2>
+ <p>  
+ <div class="w3-content w3-display-container">
+  
+   <img class="mySlides" src="images/1.jpeg"  style="width:100%" class="w3-image" width="600" height="790">
+ 
+   <img class="mySlides" src="images/2.jpeg"  style="width:100%"  class="w3-image" width="600" height="790">
+  
+   <img class="mySlides" src="images/3.jpeg" style="width:100%" class="w3-image" width="700" height="790">
+  
+   <img class="mySlides" src="images/4.jpeg"  style="width:100%"  class="w3-image" width="600" height="790">
+  
+   <img class="mySlides" src="images/5.jpeg" style="width:100%" class="w3-image" width="600" height="790">
+  
+   <img class="mySlides" src="images/6.jpeg" style="width:100%" class="w3-image" width="600" height="790">
+  
+   <img class="mySlides" src="images/7.jpeg" style="width:100%" class="w3-image" width="600" height="790">
+  
+   <img class="mySlides" src="images/8.jpeg" style="width:100%" class="w3-image" width="600" height="790">
+  
+   <img class="mySlides" src="images/9.jpeg" style="width:100%" class="w3-image" width="600" height="790">
+  
+   <img class="mySlides" src="images/10.jpeg" style="width:100%" class="w3-image" width="600" height="790">
+  
+  
+
+  <button class="w3-button w3-grey w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-grey w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+ 
+ </div>
+  </p> 
+ <p>
+ <div class="w3-row-padding w3-margin-top">
+  <div class="w3-third">
+    <div class="w3-card">
+     <div class="w3-container">
+      <img src="images/11.jpg" class="w3-hover-grayscale" style="width:100%">
+      </div>
+    </div>
+  </div>
+  
+    <div class="w3-third">
+    <div class="w3-card">
+     <div class="w3-container">
+      <img src="images/12.jpg" class="w3-hover-sepia" style="width:100%">
+      </div>
+    </div>
+  </div>
+  
+  <div class="w3-third">
+    <div class="w3-card">
+     <div class="w3-container">
+      <img src="images/13.jpg" class="w3-hover-grayscale" style="width:100%"> 
+      </div>
+    </div>
+  </div>
+
+</div>
+  </p>
+
+ 
+ 
+ <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+
+</body>
+</html>
